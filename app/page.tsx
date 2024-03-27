@@ -6,16 +6,11 @@ import { Navigation } from "./components/nav";
 import { Card } from "./components/card";
 import { Article } from "./article";
 
-const navigation = [
-  { name: "Test", href: "/projects" },
-  { name: "AAA", href: "/contact" },
-];
-
 export default function Home() {
 
-  const featured = allProjects.find((project) => project.slug === "unkey")!;
-  const top2 = allProjects.find((project) => project.slug === "planetfall")!;
-  const top3 = allProjects.find((project) => project.slug === "highstorm")!;
+  const featured = allProjects.find((project) => project.slug === "projects")!;
+  const top2 = allProjects.find((project) => project.slug === "projects")!;
+  const top3 = allProjects.find((project) => project.slug === "projects")!;
   const sorted = allProjects
       .filter((p) => p.published)
       .filter(
@@ -39,14 +34,14 @@ export default function Home() {
             Projects
           </h2>
           <p className="mt-4 text-zinc-400">
-            Some of the projects are from work and some are on my own time.
+            Work and personal projects of all kinds are listed below.
           </p>
         </div>
         <div className="w-full h-px bg-zinc-800" />
 
         <div className="grid grid-cols-1 gap-8 mx-auto lg:grid-cols-2 ">
           <Card>
-            <Link href={`/projects/${featured.slug}`}>
+            <Link href={`/${featured.slug}`}>
               <article className="relative w-full h-full p-4 md:p-8">
                 <div className="flex items-center justify-between gap-2">
                   <div className="text-xs text-zinc-100">
@@ -60,12 +55,6 @@ export default function Home() {
                       <span>SOON</span>
                     )}
                   </div>
-                  {/*<span className="flex items-center gap-1 text-xs text-zinc-500">*/}
-                  {/*  <Eye className="w-4 h-4" />{" "}*/}
-                  {/*  {Intl.NumberFormat("en-US", { notation: "compact" }).format(*/}
-                  {/*    views[featured.slug] ?? 0,*/}
-                  {/*  )}*/}
-                  {/*</span>*/}
                 </div>
 
                 <h2
