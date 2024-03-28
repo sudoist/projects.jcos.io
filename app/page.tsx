@@ -8,9 +8,9 @@ import { Article } from "./article";
 
 export default function Home() {
 
-  const featured = allProjects.find((project) => project.slug === "projects")!;
-  const top2 = allProjects.find((project) => project.slug === "projects")!;
-  const top3 = allProjects.find((project) => project.slug === "projects")!;
+  const featured = allProjects.find((project) => project.slug === "lms-laravel")!;
+  const top2 = allProjects.find((project) => project.slug === "ordering-poc")!;
+  const top3 = allProjects.find((project) => project.slug === "payroll-laravel")!;
   const sorted = allProjects
       .filter((p) => p.published)
       .filter(
@@ -66,6 +66,18 @@ export default function Home() {
                 <p className="mt-4 leading-8 duration-150 text-zinc-400 group-hover:text-zinc-300"
                    dangerouslySetInnerHTML={{ __html: featured.description }}>
                 </p>
+                {/* Tech stack */}
+                <h4 className="mt-8 z-20 text-xl font-medium duration-1000 lg:text-xl text-zinc-200 group-hover:text-white font-display">
+                  Tech Stack:
+                </h4>
+                <div
+                  className="mx-auto mt-2 grid max-w-lg grid-cols-4 items-center gap-x-8 gap-y-8 sm:max-w-xl sm:grid-cols-6 sm:gap-x-10 sm:gap-y-4 lg:max-w-4xl lg:grid-cols-4">
+                  {featured.preview.map((item: any) => (
+                    <div className="text-sm text-center text-gray-200">
+                      {item.name as string}
+                    </div>
+                  ))}
+                </div>
                 <div className="absolute bottom-4 md:bottom-8">
                   <p className="hidden text-zinc-200 hover:text-zinc-50 lg:block">
                     Read more <span aria-hidden="true">&rarr;</span>
