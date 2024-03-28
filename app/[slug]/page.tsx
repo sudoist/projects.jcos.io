@@ -42,10 +42,10 @@ export default async function PostPage({ params }: Props) {
           {project.stack.map((item: object) => (
             <li className="overflow-hidden rounded-xl border border-gray-200">
               <div className="flex items-center gap-x-4 border-b border-gray-900/5 bg-gray-50 p-6">
-                <img src={item.src} alt={item.alt}
+                <img src={item.src as String} alt={item.alt as String}
                      className="flex-none rounded-lg object-cover"/>
               </div>
-              <div className="mt-2 -ml-3 text-sm text-center font-medium text-gray-900">{item.name}</div>
+              <div className="mt-2 -ml-3 text-sm text-center font-medium text-gray-900">{item.name as String}</div>
             </li>
 
           ))}
