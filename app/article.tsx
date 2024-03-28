@@ -1,6 +1,5 @@
 import type { Project } from "@/.contentlayer/generated";
 import Link from "next/link";
-import { Eye, View } from "lucide-react";
 
 type Props = {
 	project: Project;
@@ -23,10 +22,6 @@ export const Article: React.FC<Props> = ({ project, views }) => {
 							<span>SOON</span>
 						)}
 					</span>
-					{/*<span className="text-zinc-500 text-xs  flex items-center gap-1">*/}
-					{/*	<Eye className="w-4 h-4" />{" "}*/}
-					{/*	{Intl.NumberFormat("en-US", { notation: "compact" }).format(views)}*/}
-					{/*</span>*/}
 				</div>
 				<h2 className="z-20 text-xl font-medium duration-1000 lg:text-3xl text-zinc-200 group-hover:text-white font-display">
 					{project.title}
@@ -34,6 +29,19 @@ export const Article: React.FC<Props> = ({ project, views }) => {
 				<p className="z-20 mt-4 text-sm  duration-1000 text-zinc-400 group-hover:text-zinc-200"
 					 dangerouslySetInnerHTML={{ __html: project.description }}>
 				</p>
+				{/* Tech stack */}
+				<h4 className="mt-8 z-20 text-xl font-medium duration-1000 lg:text-xl text-zinc-200 group-hover:text-white font-display">
+					Tech Stack:
+				</h4>
+				<div
+					className="mx-auto mt-2 grid max-w-lg grid-cols-4 items-center gap-x-8 gap-y-8 sm:max-w-xl sm:grid-cols-6 sm:gap-x-10 sm:gap-y-4 lg:max-w-4xl lg:grid-cols-4">
+					{project.preview.map((item) => (
+						<div className="text-sm text-center text-gray-200">
+							{item.name}
+						</div>
+					))}
+				</div>
+
 			</article>
 		</Link>
 	);
