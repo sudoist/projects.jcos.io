@@ -1,0 +1,105 @@
+---
+title: "POC: Scraper Site"
+description: Initial scraper project for proof of concept and presentation for an insurance company.
+date: "2023-11-07"
+url: https://scrape1.dev.jcos.io
+repository: sudoist/orizal-api
+preview: [
+           {
+               name: "PHP",
+           },
+           {
+               name: "Laravel",
+           },
+           {
+               name: "MySQL",
+           },
+           {
+               name: "REST API",
+           },
+       ]
+stack: [
+           {
+               name: "HTML",
+               src: "/images/logos/html5.svg",
+               alt: "HTML",
+           },
+           {
+               name: "CSS",
+               src: "/images/logos/css.svg",
+               alt: "CSS",
+           },
+           {
+               name: "Tailwind CSS",
+               src: "/images/logos/tailwind.svg",
+               alt: "Tailwind CSS",
+           },
+           {
+               name: "PHP",
+               src: "/images/logos/php.svg",
+               alt: "PHP",
+           },
+           {
+               name: "Laravel",
+               src: "/images/logos/laravel.svg",
+               alt: "Laravel",
+           },
+           {
+               name: "MySQL",
+               src: "/images/logos/mysql.svg",
+               alt: "MySQL",
+           },
+           {
+               name: "Postman",
+               src: "/images/logos/postman.svg",
+               alt: "Postman",
+           },
+           {
+               name: "Git",
+               src: "/images/logos/git.svg",
+               alt: "Git",
+           },
+           {
+               name: "GitHub",
+               src: "/images/logos/github.svg",
+               alt: "GitHub",
+           },
+       ]
+published: true
+---
+
+## Summary
+
+Proof of concept project to be able to fetch insurance pricing from live sites.
+The main idea is to be an aggregator that regularly pulls prices from providers.jQuery
+
+Pulling of prices was triggered by Laravel task scheduling that runs a Dusk test.
+Dusk then processes the data then inserts relevant information to the DB.
+
+- Web app built with [Laravel](https://laravel.com/)
+- CSS framework with [Tailwind CSS](https://tailwindcss.com)
+- Deployed on [DigitalOcean](https://www.digitalocean.com/)
+
+## C4 Model
+
+A rough draft of the solution to illustrate how the app works.
+
+### Context
+
+![Alt text](https://res.cloudinary.com/langitlupakintoncloud/image/upload/v1711633923/projects.jcos.io/qvwzrcjfrzpkws7uy1fw.png "Context")
+
+### Container
+
+![Alt text](https://res.cloudinary.com/langitlupakintoncloud/image/upload/v1711633923/projects.jcos.io/yfc7lj73pe8qemv2monr.png "Container")
+
+## Sample Screens
+
+### Scrapers List
+
+![Alt text](https://res.cloudinary.com/langitlupakintoncloud/image/upload/v1711635206/projects.jcos.io/vm5kxxmuhfz1pxvft0yd.png "Scrapers")
+
+### Scraped Pricing
+
+![Alt text](https://res.cloudinary.com/langitlupakintoncloud/image/upload/v1711635207/projects.jcos.io/iconfj1jigqqrszubcyz.png "Pricing")
+
+## Built with
