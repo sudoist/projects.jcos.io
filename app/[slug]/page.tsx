@@ -36,6 +36,20 @@ export default async function PostPage({ params }: Props) {
 
       <article className="px-4 py-12 mx-auto prose prose-zinc prose-quoteless">
         <Mdx code={project.body.code} />
+
+        {/* Logo cards */}
+        <ul role="list" className="grid grid-cols-1 gap-x-6 gap-y-8 lg:grid-cols-4 xl:gap-x-8">
+          {project.stack.map((item) => (
+            <li className="overflow-hidden rounded-xl border border-gray-200">
+              <div className="flex items-center gap-x-4 border-b border-gray-900/5 bg-gray-50 p-6">
+                <img src={item.src} alt={item.alt}
+                     className="flex-none rounded-lg object-cover"/>
+              </div>
+              <div className="mt-2 -ml-3 text-sm text-center font-medium text-gray-900">{item.name}</div>
+            </li>
+
+          ))}
+        </ul>
       </article>
     </div>
   );
