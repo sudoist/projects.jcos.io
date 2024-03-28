@@ -39,7 +39,7 @@ export default async function PostPage({ params }: Props) {
 
         {/* Logo cards */}
         <ul role="list" className="grid grid-cols-1 gap-x-6 gap-y-8 lg:grid-cols-4 xl:gap-x-8">
-          {project.stack.map((item) => (
+          {project.stack.map((item: object) => (
             <li className="overflow-hidden rounded-xl border border-gray-200">
               <div className="flex items-center gap-x-4 border-b border-gray-900/5 bg-gray-50 p-6">
                 <img src={item.src} alt={item.alt}
