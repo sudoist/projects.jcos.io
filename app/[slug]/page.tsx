@@ -38,7 +38,7 @@ export default async function PostPage({ params }: Props) {
         <Mdx code={project.body.code} />
 
         {/* Logo cards */}
-        <ul role="list" className="grid grid-cols-1 gap-x-6 gap-y-8 lg:grid-cols-4 xl:gap-x-8">
+        <ul role="list" className="grid grid-cols-2 gap-x-6 gap-y-8 2xs:grid-cols-3 xs:grid-cols-4 xl:gap-x-8">
           {project.stack.map((item: any) => (
             <li className="overflow-hidden rounded-xl border border-gray-200">
               <div className="flex items-center gap-x-4 border-b border-gray-900/5 bg-gray-50 p-6">
