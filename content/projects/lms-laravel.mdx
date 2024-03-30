@@ -1,8 +1,9 @@
 ---
 title: "Learning Management System"
 description: A big revamp of an old Joomla site. <br /> The existing Joomla data also needs to be migrated to new Backend. <br /> Backend is built with Laravel to serve Nuxt clients then eventually mobile apps.
-date: "2020-07-02"
+date: "2021-05-04"
 repository: https://github.com/tigasoft/tlms-nuxt
+previewTitle: Tech Stack
 preview: [
            {
                name: "Docker",
@@ -26,7 +27,7 @@ preview: [
                name: "Nuxt.js",
            },
            {
-               name: "Vimeo",
+               name: "Redis",
            },
            {
                name: "Vimeo",
@@ -47,11 +48,6 @@ stack: [
                name: "Tailwind",
                src: "/images/logos/tailwind.svg",
                alt: "Tailwind",
-           },
-           {
-               name: "JavaScript",
-               src: "/images/logos/js.svg",
-               alt: "JavaScript",
            },
            {
                name: "Vue.js",
@@ -84,6 +80,11 @@ stack: [
                alt: "Docker",
            },
            {
+               name: "Redis",
+               src: "/images/logos/redis.svg",
+               alt: "Redis",
+           },
+           {
                name: "Git",
                src: "/images/logos/git.svg",
                alt: "Git",
@@ -111,6 +112,8 @@ Coming from another company which I also worked on an LMS, this project was a gr
 The CMS can do a lot things and was built from scratch.
 
 In the UI side, there were a lot of nesting components and state management.
+
+We've utilized Redis to handle cache and queueing for checkouts
 
 At the end we were able to complete an end to end process from enrollment to generating a certificate.
 
