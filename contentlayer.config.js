@@ -42,6 +42,9 @@ export const Project = defineDocumentType(() => ({
 		repository: {
 			type: "string",
 		},
+		previewTitle: {
+			type: "string",
+		},
 		preview: {
 			type: "json",
 		},

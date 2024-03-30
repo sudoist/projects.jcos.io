@@ -1,6 +1,5 @@
 import Link from "next/link";
 import React from "react";
-import Particles from "./components/particles";
 import { allProjects } from "contentlayer/generated";
 import { Navigation } from "./components/nav";
 import { Card } from "./components/card";
@@ -66,9 +65,8 @@ export default function Home() {
                 <p className="mt-4 leading-8 duration-150 text-zinc-400 group-hover:text-zinc-300"
                    dangerouslySetInnerHTML={{ __html: featured.description }}>
                 </p>
-                {/* Tech stack */}
                 <h4 className="mt-8 z-20 text-xl font-medium duration-1000 lg:text-xl text-zinc-200 group-hover:text-white font-display">
-                  Tech Stack:
+                  {featured.previewTitle as string}:
                 </h4>
                 <div
                   className="mx-auto mt-2 grid max-w-lg grid-cols-4 items-center gap-x-8 gap-y-8 sm:max-w-xl sm:grid-cols-6 sm:gap-x-10 sm:gap-y-4 lg:max-w-4xl lg:grid-cols-4">

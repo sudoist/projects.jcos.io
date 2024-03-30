@@ -1,0 +1,84 @@
+---
+title: "Devops: CI/CD"
+description: Started getting into automated deployments.
+date: "2017-07-11"
+previewTitle: Tools
+preview: [
+           {
+               name: "Ansible",
+           },
+           {
+               name: "Jenkins",
+           },
+           {
+               name: "Bash",
+           },
+           {
+               name: "YAML",
+           },
+       ]
+stack: [
+           {
+               name: "Docker",
+               src: "/images/logos/docker.svg",
+               alt: "Docker",
+           },
+           {
+               name: "Git",
+               src: "/images/logos/git.svg",
+               alt: "Git",
+           },
+           {
+               name: "GitHub",
+               src: "/images/logos/github.svg",
+               alt: "GitHub",
+           },
+           {
+               name: "Bitbucket",
+               src: "/images/logos/bitbucket.svg",
+               alt: "Bitbucket",
+           },
+           {
+               name: "Ansible",
+               src: "/images/logos/ansible.png",
+               alt: "Ansible",
+           },
+           {
+               name: "Jenkins",
+               src: "/images/logos/jenkins.png",
+               alt: "Jenkins",
+           },
+       ]
+published: true
+---
+
+## Summary
+
+Started playing with Bitbucket Pipelines to automate deployments.
+
+First exposed at work back in 2017, the infra they were using was Bamboo then moved to Jenkins.
+
+I've experimented with several services like Travis CI, [Trellis](https://roots.io/trellis/) which uses Ansible for WordPress.
+
+Currently I just went with 2 services.
+
+Saves a lot of time with configuration. Easy to get started with hooking GitHub repos then push to deploy.
+
+- For web server requirements, I go with [Laravel Forge](https://forge.laravel.com/)
+- For SPA and node apps, I use [Netlify](https://www.netlify.com/)
+
+Vercel also provides good service but I've already setup domains with Netlify.
+
+
+## Sample Screens
+
+### Netlify
+
+![Alt text](https://res.cloudinary.com/langitlupakintoncloud/image/upload/v1711792079/projects.jcos.io/h8tc3mouov7yqh9ra8po.png "Netlify")
+
+#### Laravel Forge
+
+![Alt text](https://res.cloudinary.com/langitlupakintoncloud/image/upload/v1711792079/projects.jcos.io/e5dxs3lfuqjqzgejqaoo.png "Laravel Forge")
+
+
+## Tools

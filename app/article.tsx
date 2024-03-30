@@ -29,9 +29,8 @@ export const Article: React.FC<Props> = ({ project, views }) => {
 				<p className="z-20 mt-4 text-sm  duration-1000 text-zinc-400 group-hover:text-zinc-200"
 					 dangerouslySetInnerHTML={{ __html: project.description }}>
 				</p>
-				{/* Tech stack */}
 				<h4 className="mt-8 z-20 text-xl font-medium duration-1000 lg:text-xl text-zinc-200 group-hover:text-white font-display">
-					Tech Stack:
+					{project.previewTitle}:
 				</h4>
 				<div
 					className="mx-auto mt-2 grid max-w-lg grid-cols-4 items-center gap-x-8 gap-y-8 sm:max-w-xl sm:grid-cols-6 sm:gap-x-10 sm:gap-y-4 lg:max-w-4xl lg:grid-cols-4">
