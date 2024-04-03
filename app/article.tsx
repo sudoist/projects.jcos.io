@@ -22,6 +22,17 @@ export const Article: React.FC<Props> = ({ project, views }) => {
 							<span>SOON</span>
 						)}
 					</span>
+
+					{/*Is demo site live?*/}
+					{project.url ? (
+						<div className="flex-none rounded-full bg-emerald-500/20 p-1">
+							<div className="h-1.5 w-1.5 rounded-full bg-emerald-500"></div>
+						</div>
+					) : (
+						<div className="flex-none rounded-full bg-gray-500/20 p-1">
+							<div className="h-1.5 w-1.5 rounded-full bg-gray-500"></div>
+						</div>
+					)}
 				</div>
 				<h2 className="z-20 text-xl font-medium duration-1000 lg:text-3xl text-zinc-200 group-hover:text-white font-display">
 					{project.title}
@@ -33,7 +44,7 @@ export const Article: React.FC<Props> = ({ project, views }) => {
 					{project.previewTitle}:
 				</h4>
 				<div
-					className="mx-auto mt-2 grid max-w-lg grid-cols-4 items-center gap-x-8 gap-y-8 sm:max-w-xl sm:grid-cols-6 sm:gap-x-10 sm:gap-y-4 lg:max-w-4xl lg:grid-cols-4">
+					className="mx-auto mt-2 grid max-w-lg grid-cols-2 items-center gap-x-8 gap-y-8 sm:max-w-xl sm:grid-cols-3 sm:gap-x-10 sm:gap-y-4 lg:max-w-4xl lg:grid-cols-4">
 					{project.preview.map((item: any) => (
 						<div className="text-sm text-center text-gray-200">
 							{item.name as string}

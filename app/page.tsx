@@ -54,6 +54,17 @@ export default function Home() {
                       <span>SOON</span>
                     )}
                   </div>
+
+                  {/*Is demo site live?*/}
+                  {featured.url ? (
+                    <div className="flex-none rounded-full bg-emerald-500/20 p-1">
+                      <div className="h-1.5 w-1.5 rounded-full bg-emerald-500"></div>
+                    </div>
+                  ) : (
+                    <div className="flex-none rounded-full bg-gray-500/20 p-1">
+                      <div className="h-1.5 w-1.5 rounded-full bg-gray-500"></div>
+                    </div>
+                  )}
                 </div>
 
                 <h2
