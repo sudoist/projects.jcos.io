@@ -2,6 +2,7 @@
 title: "Learning Management System"
 description: A big revamp of an old Joomla site. <br /> The existing Joomla data also needs to be migrated to new Backend. <br /> Backend is built with Laravel to serve Nuxt clients then eventually mobile apps.
 date: "2021-05-04"
+url: https://api.lms2.projects.jcos.io/courses
 repository: https://github.com/tigasoft/tlms-nuxt
 previewTitle: Tech Stack
 preview: [
@@ -106,6 +107,10 @@ published: true
 # Project: Work
 
 
+[![Laravel Forge Site Deployment Status](https://img.shields.io/endpoint?url=https%3A%2F%2Fforge.laravel.com%2Fsite-badges%2Ff010e45b-2e65-4600-bba7-8ef84eac910b&style=plastic)](https://forge.laravel.com/servers/733512/sites/2310228)
+[![Laravel Forge Site Deployment Status](https://img.shields.io/endpoint?url=https%3A%2F%2Fforge.laravel.com%2Fsite-badges%2Ffd776211-3aea-49b2-a4ff-6b5f21d54ec2&style=plastic)](https://forge.laravel.com/servers/733512/sites/2310193)
+
+
 ## Summary
 
 Remembering this now. This was a really huge project for only 2 developers.
@@ -116,7 +121,11 @@ The CMS can do a lot things and was built from scratch.
 
 In the UI side, there were a lot of nesting components and state management.
 
-We've utilized Redis to handle cache and queueing for checkouts
+We've utilized Redis to handle cache and queueing for checkouts.
+
+There was also a feature for migrating from old CMS.
+
+> We've added ability to pull the data from live Joomla to this API's database.
 
 At the end we were able to complete an end to end process from enrollment to generating a certificate.
 
