@@ -49,11 +49,11 @@ export default function Home() {
             <Link href="https://projects.jcos.io/" className="duration-200 text-zinc-400 hover:text-zinc-100 underline">Click here for the default list.</Link>
           </p>
         </div>
-        <div className="w-full h-px bg-zinc-800" />
+        {/* <div className="w-full h-px bg-zinc-800" /> */}
           <h2 className="text-center text-2xl font-bold tracking-tight text-zinc-100 sm:text-3xl">
-            Filtered
+            Filtered for {type?.toUpperCase()}{"(" + stack?.toUpperCase() + ")"}
           </h2>
-        <div className="hidden w-full h-px md:block bg-zinc-800" />
+        {/* <div className="hidden w-full h-px md:block bg-zinc-800" /> */}
 
         <div className="grid grid-cols-1 gap-4 mx-auto lg:mx-0 md:grid-cols-3">
           <div className="grid grid-cols-1 gap-4">
