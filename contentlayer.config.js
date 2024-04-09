@@ -51,6 +51,9 @@ export const Project = defineDocumentType(() => ({
 		stack: {
 			type: "json",
 		},
+		filter: {
+			type: "json",
+		},
 	},
 	computedFields,
 }));
